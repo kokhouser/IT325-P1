@@ -51,7 +51,7 @@
  error_reporting('E_ALL ^ E_NOTICE');
  if(isset($_POST['submit']))
  {
-  mysql_connect('localhost','root','hunsana1') or die(mysql_error());
+  mysql_connect('localhost','root','dbpassword') or die(mysql_error());
   mysql_select_db('db_news') or die(mysql_error());
   $name=$_POST['name'];
   $username=$_POST['username'];
